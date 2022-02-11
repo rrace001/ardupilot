@@ -1244,6 +1244,16 @@ class obal(linux):
         env.DEFINES.update(
             CONFIG_HAL_BOARD_SUBTYPE = 'HAL_BOARD_SUBTYPE_LINUX_OBAL_V1',
         )
+        
+class berboard(linux):
+    toolchain = 'arm-linux-gnueabihf'
+
+    def configure_env(self, cfg, env):
+        super(berboard, self).configure_env(cfg, env)
+
+        env.DEFINES.update(
+            CONFIG_HAL_BOARD_SUBTYPE = 'HAL_BOARD_SUBTYPE_LINUX_BERBOARD_V1',
+        )
 
 class SITL_static(sitl):
     def configure_env(self, cfg, env):

@@ -54,6 +54,7 @@ class BoardList(object):
             Board("pxfmini"),
             Board("SITL_x86_64_linux_gnu"),
             Board("SITL_arm_linux_gnueabihf"),
+            Board("berboard"),
         ]
 
         for adir in os.listdir(self.hwdef_dir):
