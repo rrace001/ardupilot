@@ -361,7 +361,7 @@
         #define HAL_GPIO_LED_OFF          0
     #endif
     #define HAL_BUZZER_PIN                12 // You can choose between 27,22,4,12
-    #define BERABOARD_ALLOW_ADC                1
+    #define BERBOARD_ALLOW_ADC                1
     
 
 #else
