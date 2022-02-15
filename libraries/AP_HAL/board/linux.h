@@ -335,7 +335,8 @@
     
     // Define Notify
     #define BERBOARD_NOTIFY_LED
-    
+
+    #define HAL_GPS_TYPE_DEFAULT 18    
 
     // GY-91 SPI Connection
     #ifdef HAL_BOARD_SUBTYPE_LINUX_BERBOARD_V1_L3G4200D_I2C
