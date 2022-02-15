@@ -164,3 +164,4 @@ class BoardList(object):
 
 AUTOBUILD_BOARDS = BoardList().find_autobuild_boards()
 AP_PERIPH_BOARDS = BoardList().find_ap_periph_boards()
+>>>>>>> master

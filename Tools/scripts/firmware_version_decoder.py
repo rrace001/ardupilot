@@ -260,3 +260,4 @@ if __name__ == "__main__":
     if args.expected_hash and args.expected_hash != firmware_data.firmware_hash_string:
         print(f"Git hashes don't match! expected: {args.expected_hash}, got {firmware_data.firmware_hash_string}")
         exit(-1)
+>>>>>>> master
