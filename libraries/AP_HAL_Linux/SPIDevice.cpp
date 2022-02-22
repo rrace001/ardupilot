@@ -150,8 +150,8 @@ SPIDesc SPIDeviceManager::_device[] = {
 SPIDesc SPIDeviceManager::_device[] = {
     SPIDesc("mpu9250",    0, 0, SPI_MODE_3, 8, SPI_CS_KERNEL,  1*MHZ, 10*MHZ),
 };
-#elif CONFIG_HAL_BOARD_SUBTYPE == HAL_BOARD_SUBTYPE_LINUX_BERBOARD_V1 && \
-    defined (HAL_BOARD_SUBTYPE_LINUX_BERBOARD_V1_MPU_9250_SPI)
+#elif CONFIG_HAL_BOARD_SUBTYPE == HAL_BOARD_SUBTYPE_LINUX_BERBOARD && \
+    defined (HAL_BOARD_SUBTYPE_LINUX_BERBOARD_MPU_9250_SPI)
 SPIDesc SPIDeviceManager::_device[] = {
     SPIDesc("mpu9250",    0, 0, SPI_MODE_3, 8, SPI_CS_KERNEL,  1*MHZ, 10*MHZ),
 };
