@@ -17,6 +17,7 @@
 #include <AP_HAL/AP_HAL.h>
 #include <AP_Math/AP_Math.h>
 
+#include <hal.h>
 #include "Util.h"
 #include <ch.h>
 #include "RCOutput.h"
@@ -603,6 +604,14 @@ void Util::uart_info(ExpandingString &str)
     str.printf("IOMCU   ");
     uart_io.uart_info(str);
 #endif
+}
+#endif
+
+// request information on uart I/O
+#if HAL_USE_PWM == TRUE
+void Util::timer_info(ExpandingString &str)
+{
+    hal.rcout->timer_info(str);
 }
 #endif
 
