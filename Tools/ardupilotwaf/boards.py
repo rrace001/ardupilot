@@ -1252,7 +1252,7 @@ class berboard(linux):
         super(berboard, self).configure_env(cfg, env)
 
         env.DEFINES.update(
-            CONFIG_HAL_BOARD_SUBTYPE = 'HAL_BOARD_SUBTYPE_LINUX_BERBOARD_V1',
+            CONFIG_HAL_BOARD_SUBTYPE = 'HAL_BOARD_SUBTYPE_LINUX_BERBOARD',
         )
 
 class SITL_static(sitl):
